@@ -1,5 +1,8 @@
 # GraphQL with React and Apollo Sandbox
 
+Left off here:
+https://www.youtube.com/watch?v=5RGEODLhjhY&list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f&index=10
+
 ## Commands
 1.) access the server
     a.) `graphql-react-apollo/server (master) $ nodemon app`
@@ -21,3 +24,6 @@
 
 5.) Install GraphQL and Express-GraphQL
     `graphql-react-apollo/server (master) $ npm install graphql express-graphql`
+
+6.) Install Lodash library to find data & change data
+    `graphql-react-apollo/server (master) $ npm install lodash`
