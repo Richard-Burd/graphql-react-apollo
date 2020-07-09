@@ -3,6 +3,9 @@
 Left off here:
 https://www.youtube.com/watch?v=5RGEODLhjhY&list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f&index=10
 
+Original Git Reop is here:
+https://github.com/iamshaunjp/graphql-playlist
+
 ## Commands
 1.) access the server
     a.) `graphql-react-apollo/server (master) $ nodemon app`
