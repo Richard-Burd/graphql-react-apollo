@@ -1,7 +1,10 @@
 # GraphQL with React and Apollo Sandbox
 
 Left off here:
-https://www.youtube.com/watch?v=5RGEODLhjhY&list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f&index=10
+https://www.youtube.com/watch?v=5RGEODLhjhY&list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f&index=16
+
+before starting Lesson 16, here's a Prereq:
+https://www.youtube.com/playlist?list=PL4cUxeGkcC9jpvoYriLI0bY8DOgWZfi6u
 
 Original Git Reop is here:
 https://github.com/iamshaunjp/graphql-playlist
