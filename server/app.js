@@ -1,13 +1,14 @@
 const express = require('express');
 const { graphqlHTTP } = require('express-graphql'); // https://stackoverflow.com/questions/62760975/graphqlhttp-is-not-a-function
-const schema = require('./schema/schema')
+const schema = require('./schema/schema');
 
 
 const app = express();
 
 // bind express with graphql
 app.use('/graphql', graphqlHTTP({
-    schema
+    schema,
+    graphiql: true
 }));
 
 app.listen(4000, () => {
