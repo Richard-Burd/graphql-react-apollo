@@ -40,3 +40,7 @@ https://github.com/iamshaunjp/graphql-playlist
 
 7.) Install Mongoose
     `graphql-react-apollo/server (master) $ npm install mongoose`
+
+
+git config --global filter.gitignore.clean "sed '/#gitignore$/d'"
+git config --global filter.gitignore.clean sed '/#gitignore$/d'
