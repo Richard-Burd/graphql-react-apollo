@@ -1,7 +1,7 @@
 # GraphQL with React and Apollo Sandbox
 
 Left off here:
-https://www.youtube.com/watch?v=5RGEODLhjhY&list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f&index=16
+https://www.youtube.com/watch?v=5RGEODLhjhY&list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f&index=17
 ...
 But I've re-started to this video here after learning MondoDB
 and am on the 4th Lesson in the Series

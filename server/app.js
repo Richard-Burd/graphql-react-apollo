@@ -1,5 +1,7 @@
 const express = require('express');
-const { graphqlHTTP } = require('express-graphql'); // https://stackoverflow.com/questions/62760975/graphqlhttp-is-not-a-function
+
+// https://stackoverflow.com/questions/62760975/graphqlhttp-is-not-a-function
+const { graphqlHTTP } = require('express-graphql');
 const schema = require('./schema/schema');
 const mongoose = require('mongoose');
 
@@ -7,7 +9,7 @@ const app = express();
 
 // connect to mLab database
 mongoose.connect(
-  '<connection string goes here>',
+  'mongodb+srv....majority', // #gitignore_this_line
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
