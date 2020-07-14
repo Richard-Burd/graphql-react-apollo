@@ -9,7 +9,7 @@ const app = express();
 
 // connect to mLab database,
 mongoose.connect(
-  '<connection string goes here>', // #gitignore
+  '<shouldnt see me>', // #gitignore
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
