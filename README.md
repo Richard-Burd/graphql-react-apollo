@@ -1,7 +1,7 @@
 # GraphQL with React and Apollo Sandbox
 
 Left off here:
-https://www.youtube.com/watch?v=5RGEODLhjhY&list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f&index=17
+https://www.youtube.com/watch?v=qU9RiJ_9y_c&list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f&index=21
 ...
 But I've re-started to this video here after learning MondoDB
 and am on the 4th Lesson in the Series
@@ -43,7 +43,9 @@ https://github.com/iamshaunjp/graphql-playlist
 
 ## Ignoring Login Credentials for the Database
 https://gist.githubusercontent.com/koudaiii/54e3c438a85a52c7c368/raw/b36021af966c41fdae0ed815042595569a787e85/gistfile1.txt
+
 Here is how to tell GitHub to ignore a single line of code in a file you don't want made public:
+
 1.) create a `.gitattributes` file in the main directory of your GitHub repo
 2.) put `*.js filter=ignoreline` in that `.gitattributes` file
 3.) run `git config --global filter.ignoreline.clean "sed '/#ignoreline$/'d"`
