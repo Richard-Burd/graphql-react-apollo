@@ -7,9 +7,9 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-// connect to mLab database
+// connect to mLab database,
 mongoose.connect(
-  'mongodb+srv....majority', // #gitignore_this_line
+  '<connection string goes here>', // #gitignore
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
