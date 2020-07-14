@@ -4,8 +4,12 @@ const express = require('express');
 const { graphqlHTTP } = require('express-graphql');
 const schema = require('./schema/schema');
 const mongoose = require('mongoose');
+const cors = require('cors')
 
 const app = express();
+
+// allow cross-origin requests
+app.use(cors())
 
 mongoose.connect(
   // the line below will not be pushed to the GitHub repo because it contains
@@ -16,7 +20,7 @@ mongoose.connect(
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
-  
+
 mongoose.connection.once('open', () => {
   console.log('connected to database');
 })

@@ -41,6 +41,12 @@ https://github.com/iamshaunjp/graphql-playlist
 7.) Install Mongoose
     `graphql-react-apollo/server (master) $ npm install mongoose`
 
+8.) Apollo Server Installed
+
+9.) Install Cors
+    `graphql-react-apollo/server (master) $ npm install cors --save`
+
+
 ## Ignoring Login Credentials for the Database
 https://gist.githubusercontent.com/koudaiii/54e3c438a85a52c7c368/raw/b36021af966c41fdae0ed815042595569a787e85/gistfile1.txt
 
