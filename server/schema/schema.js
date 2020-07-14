@@ -1,12 +1,12 @@
 const graphql = require('graphql');
 const _ = require('lodash');
 
-const {
+const { // let's destructure graphql
   GraphQLObjectType,
   GraphQLString,
   GraphQLSchema,
-  GraphQLID,
-  GraphQLInt,
+  GraphQLID,  // this lets us use a special kind of integer for id's
+  GraphQLInt, // this lets us use integers for an author's age
   GraphQLList
 } = graphql;
 
@@ -28,7 +28,10 @@ var authors = [
 
 const BookType = new GraphQLObjectType({
   name: 'Book',
-  fields: ( ) => ({
+  // uses a function b.c. 'fields' is only ran when called on after all other
+  // GraphQLObjectType's have been read ... otherwise it wouldn't recognize the
+  // relationships below (such as those in AuthorType)
+  fields: () => ({
     id: { type: GraphQLID },
     name: { type: GraphQLString },
     genre: { type: GraphQLString },
@@ -44,16 +47,16 @@ const BookType = new GraphQLObjectType({
 
 const AuthorType = new GraphQLObjectType({
   name: 'Author',
-  fields: ( ) => ({
+  fields: () => ({
     id: { type: GraphQLID },
-      name: { type: GraphQLString },
-      age: { type: GraphQLInt },
-      books: {
-        type: new GraphQLList(BookType),
-        resolve(parent, args) {
-          return _.filter(books, {authorId: parent.id});
-        }
+    name: { type: GraphQLString },
+    age: { type: GraphQLInt },
+    books: {
+      type: new GraphQLList(BookType),
+      resolve(parent, args) {
+        return _.filter(books, {authorId: parent.id});
       }
+    }
   })
 });
 
@@ -64,7 +67,7 @@ const RootQuery = new GraphQLObjectType({
       type: BookType,
       args: { id: { type: GraphQLID } },
       resolve(parent, args){
-        // code to get data from db / other source
+        // code to get data from db using lodash.
         return _.find(books, { id: args.id });
       }
     },
@@ -72,7 +75,7 @@ const RootQuery = new GraphQLObjectType({
       type: AuthorType,
       args: { id: { type: GraphQLID } },
       resolve(parent, args){
-        // code to get data from db / other source
+        // code to get data from db using lodash.
         return _.find(authors, { id: args.id });
       }
     },

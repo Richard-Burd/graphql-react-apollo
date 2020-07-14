@@ -2,9 +2,13 @@
 
 Left off here:
 https://www.youtube.com/watch?v=5RGEODLhjhY&list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f&index=16
+...
+But I've re-started to this video here after learning MondoDB
+and am on the 4th Lesson in the Series
 
-before starting Lesson 16, here's a Prereq:
-https://www.youtube.com/playlist?list=PL4cUxeGkcC9jpvoYriLI0bY8DOgWZfi6u
+
+before starting Lesson 10, here's a Prereq:
+
 
 Original Git Reop is here:
 https://github.com/iamshaunjp/graphql-playlist
@@ -33,3 +37,6 @@ https://github.com/iamshaunjp/graphql-playlist
 
 6.) Install Lodash library to find data & change data
     `graphql-react-apollo/server (master) $ npm install lodash`
+
+7.) Install Mongoose
+    `graphql-react-apollo/server (master) $ npm install mongoose`
