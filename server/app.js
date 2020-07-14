@@ -7,8 +7,11 @@ const mongoose = require('mongoose');
 
 const app = express();
 
-// connect to mLab database,
 mongoose.connect(
+  // the line below will not be pushed to the GitHub repo because it contains
+  // login credentials for accessing the cloud database at: https://cloud.mongodb.com
+  // This is it's format...note the comma after the string:
+  // 'connection-string-starting-with-mongodb+srv-would-go-here',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true

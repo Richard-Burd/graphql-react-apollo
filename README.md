@@ -41,6 +41,11 @@ https://github.com/iamshaunjp/graphql-playlist
 7.) Install Mongoose
     `graphql-react-apollo/server (master) $ npm install mongoose`
 
-
-git config --global filter.gitignore.clean "sed '/#gitignore$/d'"
-git config --global filter.gitignore.clean sed '/#gitignore$/d'
+## Ignoring Login Credentials for the Database
+https://gist.githubusercontent.com/koudaiii/54e3c438a85a52c7c368/raw/b36021af966c41fdae0ed815042595569a787e85/gistfile1.txt
+Here is how to tell GitHub to ignore a single line of code in a file you don't want made public:
+1.) create a `.gitattributes` file in the main directory of your GitHub repo
+2.) put `*.js filter=ignoreline` in that `.gitattributes` file
+3.) run `git config --global filter.ignoreline.clean "sed '/#ignoreline$/'d"`
+4.) run `git config --global filter.ignoreline.smudge cat`
+5.) add `#ignoreline` to the end of every line of code you do not want committed to the GitHub repo
