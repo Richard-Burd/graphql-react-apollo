@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useQuery, useMutation } from '@apollo/client';
-import { getAuthorsQuery, addBookMutation } from '../queries/queries';
+import { getAuthorsQuery, addBookMutation, getBooksQuery } from '../queries/queries';
 
 function AddBook() {
   // this maybe should be deleted
@@ -31,6 +31,10 @@ function AddBook() {
        genre: book.genre,
        authorId: book.authorId,
      },
+
+     // https://www.apollographql.com/docs/react/data/mutations/
+     // this rerenders the books to show the one just added
+     refetchQueries: [{query: getBooksQuery}]
    });
   }
 
