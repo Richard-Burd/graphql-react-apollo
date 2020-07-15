@@ -6,13 +6,6 @@ https://www.youtube.com/watch?v=Rvx1HLMK1-U&list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1
 on 3:20 / 11:25
 ... Should probably watch different videos that deal specifically with how to use `useQuery` instead of finishing this NetNinja video.  The problem: NetNinja's libraries are old, outdated, use class components in React, and pre-date the newer, better: `useQuery` functionality.  Now that there's a database up & running w/ a React frontend (in this very sandbox) the NetNinja video series is not as useful.
 
-
-before starting Lesson 10, here's a Prereq:
-
-
-Original Git Repo is here:
-https://github.com/iamshaunjp/graphql-playlist
-
 ## Commands
 1.) access the server
     a.) `graphql-react-apollo/server (master) $ nodemon app`
